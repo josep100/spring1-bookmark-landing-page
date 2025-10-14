@@ -1,0 +1,34 @@
+@use 'variables';
+
+body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+p {
+    font-size: variables.$paragraph-size;
+    font-weight: variables.$paragraph-weight;
+    color: variables.$paragraph-color;
+    line-height: 1.9;
+}
+
+h1, h2, h3 {
+    font-size: variables.$title-size;
+    font-weight: variables.$title-weight;
+    color: variables.$title-color;
+    margin: 0;
+}
+
+figure{
+    margin: 0;
+}
