@@ -1,0 +1,296 @@
+@use 'mixins';
+@use 'variables';
+
+//menu
+.logo-menu{
+    @include mixins.flex-container(space-around, center);
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+
+    button{
+        @include mixins.button-reset();
+        margin-right: 3rem;
+    }
+}
+
+.modal-menu {
+    position: fixed;
+    inset: 0;
+    display: none;
+    background: rgba(36, 42, 69, 0.97);
+    padding-top: 2rem;
+    z-index: 1;
+
+    .modal-menu-header {
+        width: 90%;
+        max-width: 350px;
+        @include mixins.flex-container(space-around, center);
+        margin-bottom: 2rem;
+
+        figure{
+            @include mixins.flex-container(center, center);
+            gap: 1rem;
+
+            p{
+              color: #fff;
+            }
+        }
+
+        .close-modal{
+            @include mixins.button-reset();
+        }
+    }
+
+    li{
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 2rem;
+        text-align: center;
+        &:last-child{
+            padding: 0;
+        }
+
+        a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 1rem 0 !important;
+            background: none;
+            color: #fff;
+            border: 2px solid #fff !important;
+            border-radius: 6px;
+            font-size: 1.1rem !important;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin-top: 1.3rem;
+        }
+    }
+
+    .modal-menu-social {
+        width: 27%;
+        margin: 0 auto;
+        padding-top: 13rem;
+
+        a{
+           margin-right: 1rem;
+        }
+    }
+}
+
+.hero,
+.features-content {
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+}
+
+.cta-buttons {
+    @include mixins.flex-container(center, center);
+    gap: 1rem;
+}
+
+.primary {
+    @include mixins.button(variables.$color-primary, white);
+}
+
+.secondary {
+  @include mixins.button(variables.$color-secondary, variables.$color-text);
+}
+
+.features-content {
+  ul {
+    width: 106%;
+    margin-bottom: 3rem;
+
+    li {
+      border-top: 1px solid #e0e0e0;
+      padding: 1rem;
+      position: relative;
+
+      a {
+        color: #555;
+        font-weight: 500;
+
+        &.active {
+          color: #111;
+          font-weight: 600;
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50%;
+            height: 3px;
+            background-color: #f25f3a;
+            border-radius: 2px;
+          }
+        }
+      }
+    }
+
+    li:last-child {
+      border-bottom: 1px solid #e0e0e0;
+    }
+  }
+
+  .tab-panel{
+      figure{
+        margin-bottom: 3rem;
+      }
+  }
+}
+
+.content-card {
+    width: 100%;
+    .card {
+        @include mixins.card();
+        .card-header{
+            padding: 2rem;
+            figure{
+              margin-bottom: 1rem;
+              img{
+                width: 50%;
+                height: auto;
+              }
+            }
+        }
+        .card-footer{
+          figure{
+            margin-bottom: 2rem;
+          }
+           padding-bottom: 2rem;
+        }
+    }
+}
+
+.question-content{
+    .content-faq{
+        margin-bottom: 3rem;
+        width: 89%;
+        details{
+            border-bottom: 1px solid #e0e0e0;
+            padding: 1rem 0;
+            p{
+              text-align: left;
+              width: 96%;
+            }
+
+            &[open] {
+              summary {
+                &::after {
+                  transform: rotate(180deg);
+                }
+              }
+            }
+        }
+        summary{
+            cursor: pointer;
+            @include mixins.flex-container(space-between, center);
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: #242a45;
+            
+            &::after{
+              content: "";
+              display: inline-block;
+              width: 1rem;
+              height: 1rem;
+              background: url("../../starter-code/images/icon-arrow.svg") no-repeat center;
+              background-size: contain;
+              transition: transform 0.3s ease;
+            }
+        }
+    }
+}
+
+ .form-question {
+        background-color: #5267df;
+        padding: 3rem 0;
+        color: #fff;
+        margin-top: 3rem;
+
+        span{
+          display: block;
+          font-size: 0.90rem;
+          font-weight: 600;
+          letter-spacing: 2px;
+          color: #ffffffcc;
+        }
+
+        h2{
+          font-size: 1.5rem;
+          font-weight: 600;
+          margin-bottom: 2rem;
+          line-height: 1.4;
+          color: #fff;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            input[type="email"] {
+              width: 85%;
+              padding: 0.75rem 1rem;
+              border: none;
+              border-radius: 0.5rem;
+              font-size: 1rem;
+
+              &::placeholder {
+                color: #cccccc;
+                opacity: 1;
+              }
+            }
+        }
+        button{
+          padding: 0.75rem 1rem;
+          background-color: #fa5959;
+          color: #fff;
+          border: none;
+          border-radius: 0.5rem;
+          font-weight: 500;
+          font-size: 1rem;
+          cursor: pointer;
+        }
+  }
+
+  footer {
+      background: #242846;
+      padding: 40px 0;
+
+      .nav-content{
+          li{
+              margin-bottom: 2rem;
+
+              a{
+                  color: #c3c7e6;
+                  font-size: 0.9rem;
+              }
+          }
+
+          figure{
+            @include mixins.flex-container(center, center);
+            gap: 0.5rem;
+            color: #fff;
+          }
+
+          nav{
+              margin-top: 3rem;
+              margin-bottom: 5rem;
+          }
+      }
+
+      .social-content{
+              figure{
+                  @include mixins.flex-container(center, center);
+                  gap: 3rem;
+              }
+      }
+  }
