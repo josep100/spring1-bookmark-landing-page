@@ -4,18 +4,51 @@ Este repositorio contiene la implementación del Spring 1, realizado con HTML5, 
 
 ---
 
-## 🚀 Iteraciones
+## 📂 Estructura del proyecto
 
-### Iteración 1
-1. Clonar el repositorio
-2. Entra a tu directorio: cd directorio
-3. Listar las ramas disponibles: git branch -a
-4. Cambiar a la rama vanille: git checkout feature/vanilla-implementation
+- `src/index.html` → Página principal.
+- `src/css/` → Carpeta con los archivos CSS.
+- `src/js/` → Carpeta con los archivos JavaScript .
 
-### Iteración 2
-- Se utiliza **Sass** para mejorar la organización y mantenibilidad del CSS.
-1. Cambiar a la rama sass: git checkout feature/sass-implementation
-2. descarga las dependencias del proyecto: npm install
+---
+
+## 🚀 Instrucciones para usar el proyecto Iteración 1
+
+Sigue estos pasos para clonar y ejecutar la landing page en tu equipo:
+
+### 1️. Clonar el repositorio
+
+```
+git clone https://github.com/josep100/spring1-bookmark-landing-page.git
+
+```
+### 2. Moverte al directorio del proyecto
+```
+cd tuDirectorio
+
+```
+
+### 3. Cambiar a la rama deseada
+```
+git checkout  feature/vanilla-implementation
+
+```
+
+### 4. Cambiar a la rama deseada
+
+Abre el archivo index.html con tu navegador favorito.
+necesitas tener Live server en el visual studio code
+
+
+
+## 🚀 Instrucciones para usar el proyecto Iteración 2
+
+### Despues del paso 1 que hicimos en la iteración 1 descargaremos las dependencias que necesita el proyecto.
+```
+npm install
+
+```
+
 
 
 
