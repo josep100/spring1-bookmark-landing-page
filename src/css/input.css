@@ -1,0 +1,56 @@
+@import url(variables.css);
+@import "tailwindcss";
+
+@layer{
+    body{
+        font-family: "Poppins", sans-serif;
+    }
+
+    p{
+        font-size: var(--paragraph-size);
+        font-weight: var(--paragraph-weight);
+        color: var(--paragraph-color);
+        line-height: 1.9;
+        margin-bottom: 1.5rem;
+    }
+
+    h1, 
+    h2, 
+    h3 {
+        font-size: var(--title-size);
+        font-weight: var(--title-weight);
+        color: var(--title-color);
+        /*margin: 0;*/
+    }
+
+    .primary{
+        background: var(--color-primary);
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 1rem 1.5rem;
+        font-weight: 500;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .secondary{
+        background: var(--color-secondary);
+        color: var(--color-text);
+        border: none;
+        border-radius: 0.5rem;
+        padding: 1rem 1.5rem;
+        font-weight: 500;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card{
+        background: var(--card-bg);
+        box-shadow: var(--card-shadow);
+        margin: 0 auto;
+        max-width: 290px;
+        width: 90%;
+        margin-bottom: 3rem;
+    }
+};
