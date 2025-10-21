@@ -3,8 +3,15 @@
 
 //container hero
 .section {
-  @include mixins.flex-container(center, center, column);
-  text-align: center;
-  padding: variables.$spacing-section 2rem;
+    @include mixins.flex-container(center, center, column);
+    text-align: center;
+    padding: variables.$spacing-section 2rem;
+
+    @include mixins.respond(desktop){
+          @include mixins.flex-container(space-between, center);
+    }
+
 }
+
+
 

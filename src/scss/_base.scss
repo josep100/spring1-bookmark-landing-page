@@ -1,9 +1,10 @@
 @use 'variables';
+@use 'mixins';
 
-body {
-        margin: 0;
-        font-family: "Poppins", sans-serif;
-        box-sizing: border-box;
+
+
+body{
+    font-family: "Poppins", sans-serif;
 }
 
 ul{
@@ -20,6 +21,12 @@ p {
     font-weight: variables.$paragraph-weight;
     color: variables.$paragraph-color;
     line-height: 1.9;
+    margin-bottom: 1.5rem;
+
+    @include mixins.respond(tablet) {
+        max-width: 43ch;
+   
+    }
 }
 
 h1, h2, h3 {
