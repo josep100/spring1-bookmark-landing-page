@@ -1,10 +1,10 @@
 :root {
     /* Variables globales */
-    --title-size: 1.6rem;
+    --title-size: 2rem;
     --title-weight: 700;
     --title-color: #242A45;
 
-    --paragraph-size: 1rem;
+    --paragraph-size: 1.2rem;
     --paragraph-weight: 400;
     --paragraph-color: #9194A2;
 
@@ -17,7 +17,7 @@
     --card-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Global Styles */
+/* Global Styles */features/
     body {
         margin: 0;
         font-family: "Poppins", sans-serif;
@@ -73,7 +73,7 @@
 
     .logo-menu{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         margin-top: 2rem;
         margin-bottom: 3rem;
@@ -186,11 +186,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 0.1rem;
-        margin-bottom: 3rem;
+        gap: 1rem;
+        margin-bottom: 13rem;
     }
     .hero h1{
         line-height: 1.9;
+        margin: 0 auto;
+        margin-bottom: 2rem;
     } 
 
     .hero figure{
@@ -203,16 +205,35 @@
         position: absolute;
         top: 21%;
         right: 0%;
-        width: 92%;
+        width: 88%;
         height: 78%;
         background-color: #5267DF;
         border-bottom-left-radius: 150px 120px;
         z-index: -1;
     }
 
+    .hero p{
+        max-width: 81%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+
 
 
 /* Features content */
+
+    .features-content{
+        margin-bottom: 15rem;
+    }
+    
+    .features-content p{
+        margin-top: 0;
+        max-width: 92%;
+    }
+
+    .features-content h3{
+        font-size: 1.7rem;
+    }
 
     .features-content figure{
         margin: 0;
@@ -233,8 +254,9 @@
     }
 
     .features-content a{
-    color: #555;
-    font-weight: 500;
+        color: #555;
+        font-weight: 500;
+        font-size: 1.2rem;
     }
 
     .features-content .active {
@@ -248,19 +270,29 @@
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        width: 50%;
+        width: 46%;
         height: 3px;
         background-color: #f25f3a; 
         border-radius: 2px;
     }
 
     .features-content img{
-        width: 79%;
+        width: 82%;
         height: auto;
     }
 
     .tab-panel, .tab-panel div{
         margin-top: 5rem;
+    }
+
+    .tab-panel p{
+        max-width: 90%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
+
+    .tab-panel button{
+        display: none;
     }
 
     .tab-panel figure::after {
@@ -281,19 +313,52 @@
        margin-top: 3rem;
     }
 
+    .download-content h2{
+        font-size: 1.8rem;
+    }
+
+    .download-content p{
+        max-width: 90%;
+        margin-top: 0;
+    }
+
+    .download-content .card-header figure{
+        margin: 0 auto;
+        width: 39%;
+    }
+
+    .download-content h3{
+        font-size: 1.6rem;
+        margin-bottom: 0rem;
+    }
+
+    .download-content .card-header p{
+        margin-top: 0.4rem;
+    }
+
+    .download-content .card-footer figure{
+        margin: 0 0 1.2rem;
+    }
+
+    .download-content button{
+        margin-bottom: 1.3rem;
+        width: 82%;
+        padding: 1rem;
+    }
+
     .download-content .card {
         background: var(--card-bg);
         box-shadow: var(--card-shadow);
         padding: 2rem;
         margin: 0 auto;
-        max-width: 224px;
+        max-width: 272px;
         width: 90%;
         margin-bottom: 3rem;
     }
 
     .card img{
-        width: 100%;
-        height: auto;
+        margin: 0 auto;
+        width: 39%;
     }
 
 /* Question content */

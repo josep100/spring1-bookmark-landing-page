@@ -1,0 +1,48 @@
+# ──────────────────────────────
+# 📦 Node.js / JavaScript / TypeScript
+# ──────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+.pnpm-debug.log*
+
+# Environment files
+.env
+.env.*.local
+!.env.example
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+coverage/
+tmp/
+temp/
+.cache/
+.cache-loader/
+.vite/
+storybook-static/
+
+# ──────────────────────────────
+# 🧠 IDEs / Editors
+# ──────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.iml
+
+# ──────────────────────────────
+# 🖥️ OS files
+# ──────────────────────────────
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
