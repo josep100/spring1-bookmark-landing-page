@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass:watch": "sass --watch src/scss/main.scss:src/css/main.css --style expanded",
-    "tail:watch": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch"
+    "sass:watch": "sass --watch src/scss/main.scss:src/css/main.css --style expanded"
   },
   "repository": {
     "type": "git",
@@ -24,7 +23,6 @@
     "sass": "^1.93.2"
   },
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.14",
-    "tailwindcss": "^4.1.14"
+     "sass": "^1.93.2"
   }
 }

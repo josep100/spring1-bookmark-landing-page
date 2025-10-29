@@ -4,21 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!--<link rel="stylesheet" href="css/style.css">-->
-    <!--<link rel="stylesheet" href="css/main.css">-->
-    <link href="css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header class="lg:flex lg:justify-between lg:items-center lg:w-[90%] lg:max-w[1288px] lg:py-8 lg:px-0">
-        <div id="logo-menu" class="logo-menu flex justify-between px-7 mt-8 mb-20 lg:mb-0">
+    <header>
+        <div id="logo-menu" class="logo-menu">
             <figure><img src="../starter-code/images/logo-bookmark.svg" alt="logo bookmark"></figure>
-            <button class="lg:hidden" id="menu-mobile">
+            <button id="menu-mobile">
                 <img src="../starter-code/images/icon-hamburger.svg" alt="icon-hamburger">
             </button>
         </div>
-        <nav id="modal-menu"" class="modal-menu hidden fixed inset-0 bg-[rgb(36,42,69)]/97 pt-8 z-[1] lg:block lg:bg-transparent lg:z-0 lg:static" aria-label="Menú principal">
-            <div class="modal-menu-header flex justify-around items-center w-[90%] max-w-[350px] mb-8 lg:hidden">
-                <figure class="flex justify-center items-center gap-4">
+        <nav id="modal-menu"" class="modal-menu" aria-label="Menú principal">
+            <div class="modal-menu-header">
+                <figure>
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
                         <circle fill="#FFF" cx="12.5" cy="12.5" r="12.5"/>
                         <path d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z" fill="#000"/>
@@ -29,114 +27,113 @@
                     <img src="../starter-code/images/icon-close.svg" alt="Cerrar">
                 </button>
             </div>
-            <ul class="text-center lg:flex lg:justify-center lg:items-center">
-                <li class="border-t border-[rgb(255,255,255)]/15 px-8 py-8 lg:border-none lg:py-0"><a class="text-[#fff] text-[1.2rem] lg:text-[#242a45] lg:font-medium lg:text-[0.7rem] lg:tracking-[0.05rem]" href="#">FEATURES</a></li>
-                <li class="border-t border-[rgb(255,255,255)]/15 px-8 py-8 lg:border-none lg:py-0"><a class="text-[#fff] text-[1.2rem] lg:text-[#242a45] lg:font-medium lg:text-[0.7rem] lg:tracking-[0.05rem]" href="#">PRICING</a></li>
-                <li class="border-t border-[rgb(255,255,255)]/15 px-8 py-8 lg:border-none lg:py-0"><a class="text-[#fff] text-[1.2rem] lg:text-[#242a45] lg:font-medium lg:text-[0.7rem] lg:tracking-[0.05rem]" href="#">CONTACT</a></li>
-                <li class="border-t border-[rgb(255,255,255)]/15 px-0 py-0 lg:border-none lg:py-0"><button class="login-btn px-0 py-4 text-[#fff] border-2 border-[#fff] rounded-b-md text-[1.1rem] font-medium tracking-[2px] mt-[1.3rem] w-full lg:bg-[#fa5959] lg:font-semibold lg:text-[0.9rem] lg:tracking-[0.05em] lg:px-[1.7rem] lg:py-[0.7rem] lg:rounded-b-md lg:shadow-lg shadow-[rgba(250,89,89,0.25)] lg:border-none lg:mt-0">LOGIN</button></li>
+            <ul>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">PRICING</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><button class="login-btn">LOGIN</button></li>
             </ul>
-            <div class="modal-menu-social flex justify-center items-center  gap-8 pt-52 lg:hidden">
+            <div class="modal-menu-social">
                 <a href="#" aria-label="Facebook"><img src="../starter-code/images/icon-facebook.svg" alt="Facebook"></a>
                 <a href="#" aria-label="Twitter"><img src="../starter-code/images/icon-twitter.svg" alt="Twitter"></a>
             </div>
         </nav>
     </header>
     <main>
-        <section class="section hero mb-52 lg:grid lg:grid-cols-2">
-            <figure class="mb-12 lg:order-2">
+        <section class="section hero">
+            <figure>
                 <img src="../starter-code/images/illustration-hero.svg" alt="ilustacion hero">
             </figure>
-            <div class="hero-content text-center flex flex-col items-center lg:text-left lg:order-1 lg:items-start lg:justify-end lg:pl-12">
-                <h1 class="max-w-[88%] mb-4 lg:max-w-[80%]">A Simple Bookmark Manager</h1>
-                <p class="max-w-[88%] leading-[1.99rem] lg:max-w-full lg:lea-[1.4rem]">
+            <div class="hero-content">
+                <h1>A Simple Bookmark Manager</h1>
+                <p>
                     A clean and simple interface to organize
                     your favourite website. Open a new 
                     browser tan and see your sites load
                     instantly. Try it for free.
                 </p>
-                <div class="cta-buttons flex gap-4">
+                <div class="cta-buttons">
                     <button class="primary">Get it on Chrome</button>
                     <button class="secondary">Get it on Firefox</button>
                 </div>
             </div>
         </section>
-        <section class="section features-content flex flex-col items-center lg:grid lg:grid-cols-1 lg:justify-center">
-            <h2 class="text-center mb-4">Features</h2>
-            <p class="text-center max-w-[88%]">
+        <section class="section features-content">
+            <h2>Features</h2>
+            <p>
                 Our aim is to make it quick and easy for you
                 to access your favourite website. your
                 bookmarks sync between your devices so 
                 you can access them on the go.
             </p>
-             <ul class="text-center mb-[7rem] w-[87%]">
-                <li class="border-t-[1px] border-[#e0e0e0] px-4 py-4 relative"><a class="active text-[#111] font-semibold after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[38%] after:h-[3px] after:bg-[#f25f3a] after:rounded-[2px]" href="#">Simple Bookmarking</a></li>
-                <li class="border-t-[1px] border-[#e0e0e0] px-4 py-4"><a class="text-[#555] font-medium" href="#">Speedy Searching</a></li>
-                <li class="border-t-[1px] border-b-[1px] border-[#e0e0e0] px-4 py-4"><a class="text-[#555] font-medium" href="#">Easy Sharing</a></li>
+             <ul>
+                <li><a href="#">Simple Bookmarking</a></li>
+                <li><a href="#">Speedy Searching</a></li>
+                <li><a href="#">Easy Sharing</a></li>
             </ul>
-            <article class="tab-panel text-center flex flex-col items-center">
-                <figure class="w-[85%] mb-24">
+            <article class="tab-panel">
+                <figure>
                     <img src="../starter-code/images/illustration-features-tab-1.svg" alt="">
                 </figure>
-                <div class="flex flex-col items-center mb-48">
-                    <h3 class="mb-[0.6rem]">Bookmark in one click</h3>
-                    <p class="max-w-[90%]">
+                <div>
+                    <h3>Bookmark in one click</h3>
+                    <p>
                         Organize your bookmarks however you like.
                         Our simple drag-and-drop interface gives
                         you complete control over how you manage
                         your favourite sites. 
                     </p>
-                    <!--<button class="primary more-info-btn">More Info</button>-->
                 </div>
             </article>
         </section>
-        <section class="section download-content text-center mb-40">
-            <h2 class="mb-[0.6rem]">Download the extension</h2>
-            <p class="max-w-[91%] m-auto mb-20 lg:max-w-[513px] lg:mb-24">
+        <section class="section download-content">
+            <h2>Download the extension</h2>
+            <p>
                 We've got more browser in the pipeline.
                 Please do let us know if you've got a
                 favourite you'd like us to prioritize.
             </p>
-            <div class="content-card lg:flex lg:justify-center gap-4">
-                <article class="card lg:mx-0!">
-                    <div class="card-header px-8 py-8">
-                        <figure class="mb-4 flex justify-center">
-                            <img class="w-1/2 h-auto" src="../starter-code/images/logo-chrome.svg" alt="logo chrome">
+            <div class="content-card">
+                <article class="card">
+                    <div class="card-header">
+                        <figure>
+                            <img src="../starter-code/images/logo-chrome.svg" alt="logo chrome">
                         </figure>
                         <h3>Add to Chrome</h3>
                         <p>Minimum version 62</p>
                     </div>
-                    <div class="card-footer pb-8">
-                        <figure class="mb-8">
+                    <div class="card-footer">
+                        <figure>
                             <img src="../starter-code/images/bg-dots.svg" alt="bg datos">
                         </figure>
                         <button class="primary">Add & install Extension</button>
                     </div>
                 </article>
-                <article class="card lg:mx-0!">
-                    <div class="card-header px-8 py-8">
-                        <figure class="mb-4 flex justify-center">
+                <article class="card">
+                    <div class="card-header">
+                        <figure>
                             <img src="../starter-code/images/logo-firefox.svg" alt="logo firefox">
                         </figure>
                         <h3>Add to Firefox</h3>
                         <p>Minimum version 55</p>
                     </div>
-                    <div class="card-footer pb-8">
-                        <figure class="mb-8">
+                    <div class="card-footer">
+                        <figure>
                             <img src="../starter-code/images/bg-dots.svg" alt="bg datos">
                         </figure>
                         <button class="primary">Add & install Extension</button>
                     </div>
                 </article>
-                <article class="card lg:mx-0!">
-                    <div class="card-header px-8 py-8">
-                        <figure class="mb-4 flex justify-center">
+                <article class="card">
+                    <div class="card-header">
+                        <figure>
                             <img src="../starter-code/images/logo-opera.svg" alt="logo opera">
                         </figure>
                         <h3>Add to Opera</h3>
                         <p>Minimum version 46</p>
                     </div>
-                    <div class="card-footer pb-8">
-                        <figure class="mb-8">
+                    <div class="card-footer">
+                        <figure>
                             <img src="../starter-code/images/bg-dots.svg" alt="bg datos">
                         </figure>
                         <button class="primary">Add & install Extension</button>
@@ -144,20 +141,20 @@
                 </article>
             </div>
         </section>
-        <section class="section question-content flex flex-col items-center text-center mb-32">
-            <h2 class="max-w-[86%] mb-4 ">Frequently Asked Questions</h2>
-            <p class="max-w-[94%] mb-16">
+        <section class="section question-content">
+            <h2>Frequently Asked Questions</h2>
+            <p>
                 Here are some of our FAQs. If you have any
                 other questions you'd like answered please
                 feel free to mail us.
             </p>
-            <div class="content-faq w-[90%] mb-12">
-                <details class="border-b-[1px] border-[#e0e0e0] py-[0.7rem] px-0 group ">
-                    <summary class="flex justify-between items-center font-medium text-[1.2rem] cursor-pointer text-[#242a45]  after:content-[''] after:inline-block after:w-4 after:h-4 after:bg-[url(../../starter-code/images/icon-arrow.svg)] after:bg-no-repeat after:bg-center after:bg-contain after:transition-transform after:duration-300 after:ease-in group-open:after:rotate-180">What is Bookmark?</summary>
+            <div class="content-faq">
+                <details>
+                    <summary>What is Bookmark?</summary>
                 </details>
-                <details class="border-b-[1px] border-[#e0e0e0] py-[0.7rem] px-0 group">
-                    <summary class="flex justify-between items-center font-medium text-[1.2rem] cursor-pointer text-[#242a45] after:content-[''] after:inline-block after:w-4 after:h-4 after:bg-[url(../../starter-code/images/icon-arrow.svg)] after:bg-no-repeat after:bg-center after:bg-contain after:transition-transform after:duration-300 after:ease-in group-open:after:rotate-180">How can i request a new browser?</summary>
-                    <p class="w-[96%] text-left">
+                <details>
+                    <summary>How can i request a new browser?</summary>
+                    <p>
                         Vivamus luctus eros convallis
                         ultricies. Mauris augue massa.
                         ultricies non ligula. Suspendisse imperdiet.
@@ -169,49 +166,49 @@
                         Suspendisse imperdiet.
                     </p>
                 </details>
-                <details class="border-b-[1px] border-[#e0e0e0] py-[0.7rem] px-0 group">
-                    <summary class="flex justify-between items-center font-medium text-[1.2rem] cursor-pointer text-[#242a45] after:content-[''] after:inline-block after:w-4 after:h-4 after:bg-[url(../../starter-code/images/icon-arrow.svg)] after:bg-no-repeat after:bg-center after:bg-contain after:transition-transform after:duration-300 after:ease-in group-open:after:rotate-180">Is there a mobile app?</summary>
+                <details>
+                    <summary>Is there a mobile app?</summary>
                 </details>
-                <details class="border-b-[1px] border-[#e0e0e0] py-[0.7rem] px-0 group">
-                    <summary class="flex justify-between items-center font-medium text-[1.2rem] cursor-pointer text-[#242a45] after:content-[''] after:inline-block after:w-4 after:h-4 after:bg-[url(../../starter-code/images/icon-arrow.svg)] after:bg-no-repeat after:bg-center after:bg-contain after:transition-transform after:duration-300 after:ease-in group-open:after:rotate-180">What about other Chromium browsers?</summary>
+                <details>
+                    <summary>What about other Chromium browsers?</summary>
                 </details>
             </div>
             <button class="primary">More Info</button>
         </section>
-        <section class="section form-question flex flex-col items-center bg-[#5267df] px-0 py-12 text-[#fff] text-center">
-            <span class="text-[0.90rem] font-semibold tracking-[0.3rem] text-[#ffffffcc] mb-4">
+        <section class="section form-question">
+            <span>
                 35.000 + ALREADY JOINED
             </span>
-            <h2 class="text-2xl font-semibold mb-8 text-[#fff] max-w-[95%]">
+            <h2>
                 Stay up-to-date with what we're doing
             </h2>
             <article>
-                <form class="flex flex-col items-center gap-4" action="">
-                    <input class="py-3 px-4 rounded-lg text-[1rem] bg-white placeholder:text-[#cccccc] placeholder:opacity-[1] w-[180%]" type="email" placeholder="Enter your email address">
-                    <button class="py-3 px-4 bg-[#fa5959] rounded-lg font-medium text-[1rem] cursor-pointer w-[180%]" type="submit">Contact Us</button>
+                <form action="">
+                    <input type="email" placeholder="Enter your email address">
+                    <button type="submit">Contact Us</button>
                 </form>
             </article>
         </section>
     </main>
-    <footer class="section bg-[#242846] px-0 py-11 ">
+    <footer class="section">
        <section class="nav-content">
-            <figure class="flex justify-center items-center gap-2 text-[#fff]">
+            <figure>
                 <svg width="30" height="30" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="20" cy="20" r="20" fill="#5267DF"/>
                     <path d="M16 12c0-.55.45-1 1-1h6c.55 0 1 .45 1 1v16l-4-3-4 3V12z" fill="white"/>
                 </svg>
                 <span>BOOKMARK</span>
             </figure>
-            <nav class=" flex justify-center items-center mt-12 mb-20">
+            <nav>
                 <ul>
-                    <li class="mb-8 "><a class="text-[#c3c7e6] text-[0.9rem]" href="#">FEATURES</a></li>
-                    <li class="mb-8 "><a class="text-[#c3c7e6] text-[0.9rem]" href="#">PRICING</a></li>
-                    <li class="mb-8 "><a class="text-[#c3c7e6] text-[0.9rem]" href="#">CONTACT</a></li>
+                    <li><a href="#">FEATURES</a></li>
+                    <li><a href="#">PRICING</a></li>
+                    <li><a href="#">CONTACT</a></li>
                 </ul>
             </nav>
        </section>
        <section class="social-content">
-            <figure class="flex justify-center items-center gap-12">
+            <figure>
                 <a href="#"><img src="../starter-code/images/icon-facebook.svg" alt="icon facebook"></a>
                 <a href="#"><img src="../starter-code/images/icon-twitter.svg" alt="icon twitter"></a>
             </figure>

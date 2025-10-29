@@ -1,19 +1,48 @@
-# Node modules
+# ──────────────────────────────
+# 📦 Node.js / JavaScript / TypeScript
+# ──────────────────────────────
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+.pnpm-debug.log*
 
-# System files
-.DS_Store
-Thumbs.db
+# Environment files
+.env
+.env.*.local
+!.env.example
 
 # Build outputs
 dist/
 build/
+.next/
+out/
+coverage/
+tmp/
+temp/
+.cache/
+.cache-loader/
+.vite/
+storybook-static/
 
-# CSS maps
-*.css.map
+# ──────────────────────────────
+# 🧠 IDEs / Editors
+# ──────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.iml
 
-# Logs
-*.log
-
-# Environment files
-.env
+# ──────────────────────────────
+# 🖥️ OS files
+# ──────────────────────────────
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
