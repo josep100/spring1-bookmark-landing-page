@@ -7,7 +7,7 @@
     <link href="css/output.css" rel="stylesheet">
 </head>
 <body>
-    <header class="lg:flex lg:justify-between lg:items-center lg:w-[90%] lg:max-w[1288px] lg:py-8 lg:px-0">
+    <header class="lg:flex lg:justify-between lg:items-center lg:w-[90%] lg:max-w[1288px] lg:py-8 lg:px-0 lg:mb-20">
         <div id="logo-menu" class="flex justify-between px-7 mt-8 mb-20 lg:mb-0">
             <figure><img src="../starter-code/images/logo-bookmark.svg" alt="logo bookmark"></figure>
             <button class="lg:hidden" id="menu-mobile">
@@ -46,62 +46,62 @@
         </nav>
     </header>
     <main>
-        <section class="mb-52 lg:grid lg:grid-cols-2">
-            <figure class="mb-12 md:flex md:justify-center lg:order-2">
-                <img src="../starter-code/images/illustration-hero.svg" alt="ilustacion hero">
-            </figure>
-            <div class="text-center flex flex-col items-center lg:text-left lg:order-1 lg:items-start lg:justify-end lg:pl-12">
+        <section class="max-w-6xl mx-auto px-6 mb-52 flex flex-col-reverse items-center gap-12 lg:flex-row lg:justify-between">
+            <div class="text-center flex flex-col items-center lg:text-left lg:items-start lg:justify-center lg:gap-6">
                 <h1 class="max-w-[302px] mb-4 lg:max-w-[80%]">A Simple Bookmark Manager</h1>
-                <p class="max-w-[341px] leading-[1.99rem] lg:max-w-full lg:lea-[1.4rem]">
-                    A clean and simple interface to organize
-                    your favourite website. Open a new 
-                    browser tan and see your sites load
-                    instantly. Try it for free.
+                <p class="max-w-[341px] leading-[1.99rem] lg:max-w-[80%]">
+                A clean and simple interface to organize your favourite websites.
+                Open a new browser tab and see your sites load instantly.
+                Try it for free.
                 </p>
-                <div class="cta-buttons flex gap-4">
+                <div class="flex gap-4">
                     <button class="primary">Get it on Chrome</button>
                     <button class="secondary">Get it on Firefox</button>
                 </div>
             </div>
+            <figure class="relative w-full flex justify-center lg:w-[107%]">
+                <img  src="../starter-code/images/illustration-hero.svg" alt="illustration hero">
+                <!--<span class="absolute -bottom-16 -right-32 bg-[#5267df] w-[90%] h-[70%] rounded-l-full -z-10"></span>-->
+            </figure>
         </section>
-        <section class="flex flex-col items-center lg:grid lg:grid-cols-1 lg:justify-center">
-            <h2 class="text-center mb-4">Features</h2>
-            <p class="text-center max-w-[391px]">
+        <section class="max-w-6xl mx-auto px-6 flex flex-col items-center lg:grid lg:grid-cols-1 lg:justify-center lg:mb-[23%]">
+            <h2 class="text-center mb-4 text-2xl font-semibold">Features</h2>
+            <p class="text-center max-w-[391px] mx-auto text-gray-500 mb-12 lg:max-w-0-[503px]">
                 Our aim is to make it quick and easy for you
                 to access your favourite website. your
                 bookmarks sync between your devices so 
                 you can access them on the go.
             </p>
-             <ul class="text-center mb-[7rem] w-[87%]">
-                <li class="border-t-[1px] border-[#e0e0e0] px-4 py-4 relative"><a class="active text-[#111] font-semibold after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[38%] after:h-[3px] after:bg-[#f25f3a] after:rounded-[2px]" href="#">Simple Bookmarking</a></li>
-                <li class="border-t-[1px] border-[#e0e0e0] px-4 py-4"><a class="text-[#555] font-medium" href="#">Speedy Searching</a></li>
-                <li class="border-t-[1px] border-b-[1px] border-[#e0e0e0] px-4 py-4"><a class="text-[#555] font-medium" href="#">Easy Sharing</a></li>
+             <ul class="relative text-center mb-28 w-[93%] mx-auto lg:flex lg:justify-center lg:gap-12 lg:before:content-[''] lg:before:absolute lg:before:bottom-0 lg:before:left-0 lg:before:w-full lg:before:h-px lg:before:bg-[#e0e0e0] lg:w-[69%]">
+                <li class="border-t border-[#e0e0e0] relative px-8 py-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 lg:after:w-full after:w-[38%] after:h-[3px] after:bg-[#f25f3a] after:rounded  lg:border-t-0"><a class="text-[#111] font-semibold" href="#">Simple Bookmarking</a></li>
+                <li class="border-t border-[#e0e0e0] px-8 py-4 lg:border-t-0"><a class="text-[#555]" href="#">Speedy Searching</a></li>
+                <li class="border-b border-t border-[#e0e0e0] px-8 py-4 lg:border-t-0"><a class="text-[#555]" href="#">Easy Sharing</a></li>
             </ul>
-            <article class="text-center flex flex-col items-center">
-                <figure class="w-[85%] mb-24">
+            <article class="text-center flex flex-col items-center lg:flex-row lg:justify-center lg:items-center lg:gap-24">
+                <figure class="w-[85%] mb-24 lg:w-1/2 lg:mb-0">
                     <img src="../starter-code/images/illustration-features-tab-1.svg" alt="">
                 </figure>
-                <div class="flex flex-col items-center mb-48">
-                    <h3 class="mb-[0.6rem]">Bookmark in one click</h3>
+                <div class="flex flex-col items-center mb-48 lg:items-start lg:text-left lg:w-1/2 lg:mb-0">
+                    <h3 class="mb-[0.6rem] text-2xl font-medium">Bookmark in one click</h3>
                     <p class="max-w-[375px]">
                         Organize your bookmarks however you like.
                         Our simple drag-and-drop interface gives
                         you complete control over how you manage
                         your favourite sites. 
                     </p>
-                    <button class="primary more-info-btn hidden lg:block">More Info</button>
+                    <button class="primary more-info-btn hidden lg:block mt-8">More Info</button>
                 </div>
             </article>
         </section>
-        <section class="text-center mb-40">
+        <section class="max-w-6xl mx-auto px-6 text-center mb-40">
             <h2 class="mb-[0.6rem]">Download the extension</h2>
-            <p class="max-w-[338px] m-auto mb-20 lg:max-w-[513px] lg:mb-24">
+            <p class="max-w-[338px] m-auto mb-20 lg:max-w-[544px] lg:mb-24">
                 We've got more browser in the pipeline.
                 Please do let us know if you've got a
                 favourite you'd like us to prioritize.
             </p>
-            <div class="md:flex md:justify-start md:pl-24 md:flex-wrap md:gap-4 ">
-                <article class="card lg:mx-0!">
+            <div class="flex flex-col items-center md:justify-start md:pl-24 md:flex-wrap md:gap-4 lg:flex-row lg:flex-nowrap lg:pl-0 lg:justify-center ">
+                <article class="card mb-6 lg:mx-0!">
                     <div class="px-8 py-8">
                         <figure class="mb-4 flex justify-center">
                             <img class="w-1/2 h-auto" src="../starter-code/images/logo-chrome.svg" alt="logo chrome">
@@ -116,7 +116,7 @@
                         <button class="primary">Add & install Extension</button>
                     </div>
                 </article>
-                <article class=" card lg:mx-0!">
+                <article class="card mb-6 lg:mx-0!">
                     <div class="px-8 py-8">
                         <figure class="mb-4 flex justify-center">
                             <img src="../starter-code/images/logo-firefox.svg" alt="logo firefox">
@@ -131,7 +131,7 @@
                         <button class="primary">Add & install Extension</button>
                     </div>
                 </article>
-                <article class="card lg:mx-0!">
+                <article class="card mb-6 lg:mx-0!">
                     <div class="px-8 py-8">
                         <figure class="mb-4 flex justify-center">
                             <img src="../starter-code/images/logo-opera.svg" alt="logo opera">
@@ -148,19 +148,19 @@
                 </article>
             </div>
         </section>
-        <section class="flex flex-col items-center text-center mb-32">
-            <h2 class="max-w-[228px] mb-4 ">Frequently Asked Questions</h2>
-            <p class="max-w-[376px] mb-16">
+        <section class="max-w-6xl mx-auto px-6 flex flex-col items-center text-center mb-32">
+            <h2 class="max-w-[228px] mb-4 lg:max-w-[368px]">Frequently Asked Questions</h2>
+            <p class="max-w-[376px] mb-16 lg:max-w-[513px]">
                 Here are some of our FAQs. If you have any
                 other questions you'd like answered please
                 feel free to mail us.
             </p>
-            <div class="w-[90%] mb-12">
-                <details class="border-b-[1px] border-[#e0e0e0] py-[0.7rem] px-0 group ">
-                    <summary class="flex justify-between items-center font-medium text-[1.2rem] cursor-pointer text-[#242a45]  after:content-[''] after:inline-block after:w-4 after:h-4 after:bg-[url(../../starter-code/images/icon-arrow.svg)] after:bg-no-repeat after:bg-center after:bg-contain after:transition-transform after:duration-300 after:ease-in group-open:after:rotate-180">What is Bookmark?</summary>
+            <div class="w-[90%] mb-12 lg:max-w-[538px]">
+                <details class="border-b border-[#e0e0e0] py-[0.7rem] px-0 group ">
+                    <summary class="flex justify-between items-center font-medium text-[1rem] cursor-pointer text-[#242a45]  after:content-[''] after:inline-block after:w-4 after:h-4 after:bg-[url(../../starter-code/images/icon-arrow.svg)] after:bg-no-repeat after:bg-center after:bg-contain after:transition-transform after:duration-300 after:ease-in group-open:after:rotate-180">What is Bookmark?</summary>
                 </details>
-                <details class="border-b-[1px] border-[#e0e0e0] py-[0.7rem] px-0 group">
-                    <summary class="flex justify-between items-center font-medium text-[1.2rem] cursor-pointer text-[#242a45] after:content-[''] after:inline-block after:w-4 after:h-4 after:bg-[url(../../starter-code/images/icon-arrow.svg)] after:bg-no-repeat after:bg-center after:bg-contain after:transition-transform after:duration-300 after:ease-in group-open:after:rotate-180">How can i request a new browser?</summary>
+                <details class="border-b border-[#e0e0e0] py-[0.7rem] px-0 group">
+                    <summary class="flex justify-between items-center font-medium text-[1rem] cursor-pointer text-[#242a45] after:content-[''] after:inline-block after:w-4 after:h-4 after:bg-[url(../../starter-code/images/icon-arrow.svg)] after:bg-no-repeat after:bg-center after:bg-contain after:transition-transform after:duration-300 after:ease-in group-open:after:rotate-180">How can i request a new browser?</summary>
                     <p class="w-[96%] text-left">
                         Vivamus luctus eros convallis
                         ultricies. Mauris augue massa.
@@ -173,32 +173,32 @@
                         Suspendisse imperdiet.
                     </p>
                 </details>
-                <details class="border-b-[1px] border-[#e0e0e0] py-[0.7rem] px-0 group">
-                    <summary class="flex justify-between items-center font-medium text-[1.2rem] cursor-pointer text-[#242a45] after:content-[''] after:inline-block after:w-4 after:h-4 after:bg-[url(../../starter-code/images/icon-arrow.svg)] after:bg-no-repeat after:bg-center after:bg-contain after:transition-transform after:duration-300 after:ease-in group-open:after:rotate-180">Is there a mobile app?</summary>
+                <details class="border-b border-[#e0e0e0] py-[0.7rem] px-0 group">
+                    <summary class="flex justify-between items-center font-medium text-[1rem] cursor-pointer text-[#242a45] after:content-[''] after:inline-block after:w-4 after:h-4 after:bg-[url(../../starter-code/images/icon-arrow.svg)] after:bg-no-repeat after:bg-center after:bg-contain after:transition-transform after:duration-300 after:ease-in group-open:after:rotate-180">Is there a mobile app?</summary>
                 </details>
-                <details class="border-b-[1px] border-[#e0e0e0] py-[0.7rem] px-0 group">
-                    <summary class="flex justify-between items-center font-medium text-[1.2rem] cursor-pointer text-[#242a45] after:content-[''] after:inline-block after:w-4 after:h-4 after:bg-[url(../../starter-code/images/icon-arrow.svg)] after:bg-no-repeat after:bg-center after:bg-contain after:transition-transform after:duration-300 after:ease-in group-open:after:rotate-180">What about other Chromium browsers?</summary>
+                <details class="border-b border-[#e0e0e0] py-[0.7rem] px-0 group">
+                    <summary class="flex justify-between items-center font-medium text-[1rem] cursor-pointer text-[#242a45] after:content-[''] after:inline-block after:w-4 after:h-4 after:bg-[url(../../starter-code/images/icon-arrow.svg)] after:bg-no-repeat after:bg-center after:bg-contain after:transition-transform after:duration-300 after:ease-in group-open:after:rotate-180">What about other Chromium browsers?</summary>
                 </details>
             </div>
             <button class="primary">More Info</button>
         </section>
-        <section class="flex flex-col items-center bg-[#5267df] px-0 py-12 text-[#fff] text-center">
+        <section class="max-w-6xl mx-auto px-6 flex flex-col items-center bg-[#5267df] px-0 py-12 text-white text-center">
             <span class="text-[0.90rem] font-semibold tracking-[0.3rem] text-[#ffffffcc] mb-4">
                 35.000 + ALREADY JOINED
             </span>
-            <h2 class="text-2xl font-semibold mb-8 text-[#fff] max-w-[330px]">
+            <h2 class="text-2xl font-semibold mb-8 text-white max-w-[330px]">
                 Stay up-to-date with what we're doing
-            </h2>
-            <article>
-                <form class="flex flex-col items-center gap-4 w-full" action="">
-                    <input class="py-3 px-4 rounded-lg text-[1rem] bg-white placeholder:text-[#cccccc] placeholder:opacity-[1] w-[621px]" type="email" placeholder="Enter your email address" />
-                    <button class="py-3 px-4 bg-[#fa5959] rounded-lg font-medium text-[1rem] cursor-pointer w-[621px]" type="submit">Contact Us</button>
+            </h2> 
+            <article class="w-full">
+                <form class="flex flex-col items-center gap-4 w-full lg:flex-row lg:justify-center"  action="">
+                    <input class="py-3 px-4 rounded-lg text-[1rem] bg-white placeholder:text-[#cccccc] placeholder:opacity-[1] w-[371px] lg:w-[30%]" type="email" placeholder="Enter your email address" required />
+                    <button class="py-3 px-4 bg-[#fa5959] rounded-lg font-medium text-[1rem] cursor-pointer w-[371px] lg:w-[14%]"  type="submit">Contact Us</button>
                 </form>
             </article>
         </section>
     </main>
     <footer class="bg-[#242846] py-11 lg:flex lg:justify-between lg:px-4">
-       <section class="lg:flex lg:gap-11 lg:justify-start">
+       <section class=" max-w-6xl mx-auto px-6 lg:flex lg:gap-11 lg:justify-start">
             <figure class="flex justify-center items-center gap-2">
                 <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
                     <g fill="none" fill-rule="evenodd">
@@ -220,7 +220,7 @@
                 </ul>
             </nav>
        </section>
-       <section>
+       <section class="max-w-6xl mx-auto px-6">
             <figure class="flex justify-center items-center gap-12">
                 <a href="#"><img src="../starter-code/images/icon-facebook.svg" alt="icon facebook"></a>
                 <a href="#"><img src="../starter-code/images/icon-twitter.svg" alt="icon twitter"></a>

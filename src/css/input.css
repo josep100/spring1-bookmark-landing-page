@@ -20,7 +20,7 @@
         font-size: var(--title-size);
         font-weight: var(--title-weight);
         color: var(--title-color);
-        /*margin: 0;*/
+        
     }
 
     .primary{
@@ -48,9 +48,8 @@
     .card{
         background: var(--card-bg);
         box-shadow: var(--card-shadow);
-        /*margin: 0 auto;*/
         max-width: 290px;
         width: 90%;
-        /*margin-bottom: 3rem;*/
+        
     }
-};
+}
